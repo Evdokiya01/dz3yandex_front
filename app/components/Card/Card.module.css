@@ -1,0 +1,90 @@
+.card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  background-color: #FFFF00;
+  transform: translate(-8px, -8px);
+}
+
+.card__image {
+  width: 100%;
+  aspect-ratio: 375 / 250;
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 1px solid black;
+}
+
+.card__content-block {
+  padding: 16px 16px 35px;
+  border: 4px solid black;
+  flex-grow: 1;
+  display: grid;
+}
+
+.card__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.card__description {
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.card__info-container {
+  align-self: end;
+}
+
+.card__author {
+  font-size: 20px;
+}
+
+.card__author .card__accent {
+  font-family: 'Rubic One', sans-serif;
+}
+
+.card__votes {
+  font-size: 20px;
+}
+
+.card__votes .card__accent {
+  font-family: 'Rubic One', sans-serif;
+  display: inline-block;
+  padding: 4px 17px 25px 4px;
+  background-color: black;
+  color: white;
+}
+
+@media (width <= 1440px) {
+  .card__content-block {
+    padding: 16px 16px 26px;
+  }
+
+  .card__title {
+    font-size: 20px;
+  }
+
+  .card__description {
+    font-size: 16px;
+  }
+
+  .card__author {
+    font-size: 16px;
+  }
+
+  .card__votes {
+    font-size: 16px;
+  }
+
+  .card__votes .card__accent {
+    padding: 4px 15px 15px 4px;
+  }
+}

@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Rubic One";
+  src: url(/fonts/rubic-one.woff);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url(/fonts/anonymouspro-regular.woff);
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url(/fonts/anonymouspro-bold.woff);
+  font-weight: bold;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Anonymous Pro", serif;
+  font-size: 26px;
+  max-width: 1728px;
+  min-width: 365px;
+  border-right: 4px solid black;
+  border-left: 4px solid black;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubic One", sans-serif;
+  margin: 0;
+}
+
+ul,
+ol,
+li,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.button {
+  font-family: "Rubic One", sans-serif;
+  display: block;
+  padding: 18px 35px;
+  border: 4px solid black;
+  background-color: transparent;
+  text-transform: uppercase;
+  width: fit-content;
+  color: black;
+  font-size: 30px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.button:hover {
+  background-color: black;
+  color: #ffff00;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.main-inner {
+  padding-top: 20px;
+}
+
+@media (width <= 1728px) {
+  body {
+    border: none;
+  }
+}
+
+@media (width <= 1440px) {
+  body {
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+}

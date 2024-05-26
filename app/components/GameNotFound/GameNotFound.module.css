@@ -1,0 +1,39 @@
+.not-found {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+  justify-items: start;
+  gap: 20px;
+  padding: 80px 40px 0;
+}
+
+.not-found__image {
+  width: 50%;
+  min-width: 450px;
+  margin: 0 auto;
+  display: block;
+  align-self: end;
+  
+}
+
+.not-found__text {
+  font-size: 48px;
+}
+
+@media (width <= 768px) {
+  .not-found {
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 20px;
+  }
+
+  .not-found__image {
+    min-width: 300px;
+  }
+
+  .not-found__text {
+    font-size: 32px;
+    text-align: center;
+    grid-row: 1;
+  }
+}
